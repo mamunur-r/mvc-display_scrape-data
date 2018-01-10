@@ -1,0 +1,40 @@
+﻿@model List<Dictionary<string, string>>
+@{
+    ViewBag.Title = "Scrape data";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<table>
+
+
+    @{
+
+        List<string> headers = Model[0].Keys.Select(k => k).OrderBy(k => k).ToList();
+        <tr>
+            @foreach (var h in headers)
+            {
+                <th width="25%">
+                    @Html.DisplayFor(header => h)
+                </th>
+
+            }
+
+        </tr>
+
+        foreach (var dic in Model)
+        {
+            <tr>
+                @foreach (var kvp in dic)
+                {
+
+                <td> @Html.DisplayFor(hd => kvp.Value)</td>
+
+
+                }
+            </tr>
+        }
+    }
+</table>
+
+

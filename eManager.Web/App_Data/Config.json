@@ -1,0 +1,91 @@
+﻿{
+  "Regexes": [
+    {
+      "Name": "PageSelection",
+      "Id": 1,
+      "ParentId": 0,
+      "Type": 0,
+      "RegularExpression": {
+        "Pattern": "class=\"(?<ListPage>cabins-prices\\s*custom-width-center)\"",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "HtmlSelection",
+      "Id": 2,
+      "ParentId": 1,
+      "Type": 1,
+      "RegularExpression": {
+        "Pattern": "(?<Selections><section\\s*class=\"cabins-prices\\s*custom-width-center\".*?</section>)",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "Title",
+      "Id": 13,
+      "ParentId": 1,
+      "Type": 3,
+      "RegularExpression": {
+        "Pattern": "<h3\\s*class=\"title\"[^>]*>(?<Title>[^<]*)",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "Item",
+      "Id": 3,
+      "ParentId": 1,
+      "Type": 2,
+      "RegularExpression": {
+        "Pattern": "(?<Item>class=\"price-item\".*?<\\!--\\s*Price\\s*item\\s*start\\s*-->)",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "Name",
+      "Id": 4,
+      "ParentId": 3,
+      "Type": 4,
+      "RegularExpression": {
+        "Pattern": "class=\"title\"[^>]*>(?<Cabin>[^<]*)",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "Date",
+      "Id": 5,
+      "ParentId": 3,
+      "Type": 4,
+      "RegularExpression": {
+        "Pattern": "class=\"price\\s*havent-old-price\\s*\"[^>]*>(?<Currency>[^\\d]*)",
+        "Options": 25
+      }
+    },
+    {
+      "Name": "Price",
+      "Id": 6,
+      "ParentId": 3,
+      "Type": 4,
+      "RegularExpression": {
+        "Pattern": "class=\"price\\s*havent-old-price\\s*\"[^>]*>.(?<Price>[^<]*)",
+        "Options": 25
+      }
+    }
+  ],
+  "Request": {
+    "WebConfig": {
+      "TimeOut": 90000,
+      "Headers": null,
+      "PostParams": {},
+      "Cookies": null,
+      "Host": null,
+      "Accept": null,
+      "Referer": null,
+      "UserAgent": null,
+      "CustomCookies": null
+    },
+    "Url": "https://oceanwide-expeditions.com/antarctica/cruises/otl27-18-antarctic-peninsula",
+    "RequestType": "GET",
+    "PostContent": null
+  },
+  "SiteName": "OcenWide"
+}
