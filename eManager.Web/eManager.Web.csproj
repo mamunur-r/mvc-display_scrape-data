@@ -190,7 +190,12 @@
     <Content Include="Views\Home\ScrapeData.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WebScraper\WebScraper.csproj">
+      <Project>{a7c7c384-834c-40cb-bd3e-52738bc7ad72}</Project>
+      <Name>WebScraper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
@@ -203,12 +208,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Git\dotnet-scraper\WebScraper\WebScraper.csproj">
-      <Project>{a7c7c384-834c-40cb-bd3e-52738bc7ad72}</Project>
-      <Name>WebScraper</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
