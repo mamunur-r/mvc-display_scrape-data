@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eManager.Domain", "eManager.Domain\eManager.Domain.csproj", "{A5C6959C-53A7-4365-AB33-F2CC4CCF2B55}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eManager.Web", "eManager.Web\eManager.Web.csproj", "{E66B22A0-8E31-4651-95F9-B74964C40041}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteScraper", "eManager.Web\SiteScraper.csproj", "{E66B22A0-8E31-4651-95F9-B74964C40041}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper", "WebScraper\WebScraper.csproj", "{A7C7C384-834C-40CB-BD3E-52738BC7AD72}"
 EndProject
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5C6959C-53A7-4365-AB33-F2CC4CCF2B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5C6959C-53A7-4365-AB33-F2CC4CCF2B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5C6959C-53A7-4365-AB33-F2CC4CCF2B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5C6959C-53A7-4365-AB33-F2CC4CCF2B55}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E66B22A0-8E31-4651-95F9-B74964C40041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E66B22A0-8E31-4651-95F9-B74964C40041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E66B22A0-8E31-4651-95F9-B74964C40041}.Release|Any CPU.ActiveCfg = Release|Any CPU
